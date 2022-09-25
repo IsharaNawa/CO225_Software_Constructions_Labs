@@ -1,0 +1,22 @@
+E/17/219
+
+1. How to use threads to parallelize the operation?
+	*First complete operation is divided into small pieces called threads.
+	Threads performs the same operation but with different parameters.
+	Threads performs independetly.That means the operation of one thread doesnt 
+	effect to the another operation of a thread.Threds also is pretty simple and 
+	doesnt take much processing power.Finally all the threads has to be excecuted 
+	by using run() m/d.
+
+2. How many threads to use?
+	*If the final resulting matrix is nxn then total number of n*n threads must be generated.
+
+3. How to allocate work for each thread?
+	*This is done by using the run() method in the Thread superclass.First the run() should be 
+	ovverided.Run methods doesnt take any values as parameter list.Therefore the parameters should 
+	be implemented in the class and assigned with the constructor of the class.
+	
+
+4. How to synchronize?
+	*To do this we need to use synchronized() method in the run() method.Member of the 
+	thread should be given as the parameters.
