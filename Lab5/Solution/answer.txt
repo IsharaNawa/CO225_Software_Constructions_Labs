@@ -1,0 +1,27 @@
+E17219 CO225 Lab05
+
+Questions:
+1. Suppose the set currently have N number of elements and one wants to add another. How
+many comparison operations do you need?
+*N operations for check whether the adding item is already in the set.
+
+2. To remove an element how many operations do you need to do? Does it change with the
+number of elements in the set?
+*Since this is a FIFO structure the elements after first element need to be copied to 
+the front.
+*Therefore the number of operations changes with the size of the set.
+
+3. Suppose the items are kept sorted. Can you improve the performance of add? Explain.
+*Yes.Performance can be improved by reducing time complexity.
+*If the items are sorted,we dont have to compare all of the elements in the set.
+Since it is sorted , we only have to compare elements upto the value of the item 
+which is being compared.Rest of the comparison can be skipped.This will reduce the time 
+complexity of the program.
+
+4. Consider the two implementation options given for remove in the skeleton code. Which
+option is better? Why?.
+*First operation is the better option.
+*In the second operation , if it is a garbage value it will not work.
+
+5. Can you use Java annotation to get rid of -Xlint flag?
+*Yes.Java annotation @SupppressWarning("unchecked") can be used to get rid of -Xlinr flag.
