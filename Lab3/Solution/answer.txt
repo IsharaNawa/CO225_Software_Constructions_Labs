@@ -1,0 +1,5 @@
+should the average percentage attendance be 50%? Explain.
+==>In this code we assign random numbers as the attendance of each student.
+==>These random numbers can be any number form 0 to 45
+==>Depending on those random numbers average percentage is determined.
+==>Therefore there is a possiblity that the average percentage is 50%.
